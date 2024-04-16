@@ -14,7 +14,7 @@ class StatusCategoriesQuery extends Query
     ];
 
     public function type(): Type {
-        return Type::listOf(GraphQL::type('StatusCategories'));
+        return Type::listOf(GraphQL::type('StatusCategory'));
     }
 
     public function resolve($root, $args) {
