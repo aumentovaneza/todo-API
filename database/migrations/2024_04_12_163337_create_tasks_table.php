@@ -17,6 +17,7 @@ return new class extends Migration
             $table->bigInteger('status')->unsigned();
             $table->boolean('active');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
